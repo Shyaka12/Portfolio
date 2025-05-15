@@ -13,7 +13,7 @@ import {
   SiSpring,
 } from "react-icons/si";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
-import bannerImg from "../../image/bannerImg.png";
+import bannerImg from "../../image/profile.jpg";
 
 function Banner() {
   const [text] = useTypewriter({
@@ -27,9 +27,9 @@ function Banner() {
   return (
     <section
       id="home"
-      className="w-full pt-10 pb-20 flex items-center border-b-[1px] border-b-black font-titleFont"
+      className="w-full pt-10 pb-20 flex flex-col gap-10 xl:gap-0 lgl:flex-row items-center border-b-[1px] font-titleFont border-b-black"
     >
-      <div className="LeftBanner w-1/2 flex flex-col gap-20">
+      <div className="LeftBanner lgl:w-1/2 flex flex-col gap-20">
         <div className="flex flex-col gap-5">
           <h4 className="text-lg font-normal">WELCOME TO MY WORLD</h4>
           <h1 className="text-4xl font-bold text-white">
@@ -96,7 +96,7 @@ function Banner() {
           </div>
         </div>
       </div>
-      <div className="LighteBanner w-1/2 flex justify-center items-center  relative">
+      <div className="LighteBanner lgl:w-1/2 flex justify-center items-center  relative">
         <img
           className="w-[500px] h-[680px] z-10"
           src={bannerImg}
